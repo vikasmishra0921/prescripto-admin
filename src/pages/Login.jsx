@@ -18,7 +18,7 @@ const login = () => {
 
     try {
       if (state === "Admin") {
-        const { data } = await axios.post(backendUrl + "/api/admin/login", {
+        const { data } = await axios.post(backendUrl + "api/admin/login", {
           email,
           password,
         });
@@ -29,7 +29,7 @@ const login = () => {
           toast.error(data.message);
         }
       } else {
-        const { data } = await axios.post(backendUrl + "/api/doctor/login", {
+        const { data } = await axios.post(backendUrl + "api/doctor/login", {
           email,
           password,
         });
@@ -43,6 +43,7 @@ const login = () => {
       }
     } catch (error) {
       console.log(error);
+      toast.error(error.message);
     }
   };
 
