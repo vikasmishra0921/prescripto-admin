@@ -90,7 +90,7 @@ const AllAppointment = () => {
             ) : item.isCompleted ? (
               <p className="text-green-400 text-xs font-medium">completed</p>
             ) : (
-            <div>
+            <div className="flex items-center gap-2">
               <img
                 onClick={() => cancelAppointment(item._id)}
                 className="w-10 h-10 cursor-pointer mx-auto"
