@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
-import { DoctorContext } from "@vikasmishra8087/shared/context/DoctorContext";
 import { AppContext } from "../../context/AppContext";
+import { AppContext } from "../../context/DoctorContext";
 import axios from "axios";
 import { toast } from "react-toastify";
 

@@ -4,8 +4,7 @@ import { AppContext } from "../context/AppContext";
 import axios from "axios";
 import { AdminContext } from "../context/AdminContext";
 import { toast } from "react-toastify";
-import { DoctorContext } from "@vikasmishra8087/shared/context/DoctorContext";
-
+import { DoctorContext } from "../context/DoctorContext";
 const login = () => {
   const [state, setState] = useState("Admin");
   const [email, setEmail] = useState("");
