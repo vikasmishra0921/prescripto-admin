@@ -10,6 +10,7 @@ const AllAppointment = () => {
     getAllAppointments,
     cancelAppointment,
     addNewAppointment,
+    completeAppointment,
   } = useContext(AdminContext);
 
   const handleNewAppointment = (newAppointmentData) => {
