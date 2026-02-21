@@ -20,7 +20,7 @@ const AdminContextProvider = (props) => {
   const getAllDoctors = async () => {
     try {
       const { data } = await axios.post(
-        backendUrl + "/api/admin/all-doctors",
+        backendUrl + "api/admin/all-doctors",
         {},
         { headers: { aToken } }
       );
@@ -40,7 +40,7 @@ const AdminContextProvider = (props) => {
   const changeAvailability = async (docId) => {
     try {
       const { data } = await axios.post(
-        backendUrl + "/api/admin/change-availabilty",
+        backendUrl + "api/admin/change-availabilty",
         { docId },
         { headers: { aToken } }
       );
@@ -60,7 +60,7 @@ const AdminContextProvider = (props) => {
 
   const getAllAppointments = async () => {
     try {
-      const { data } = await axios.get(backendUrl + "/api/admin/appointments", {
+      const { data } = await axios.get(backendUrl + "api/admin/appointments", {
         headers: { aToken },
       });
 
@@ -80,7 +80,7 @@ const AdminContextProvider = (props) => {
   const cancelAppointment = async (appointmentId) => {
     try {
       const { data } = await axios.post(
-        backendUrl + "/api/admin/cancel-appointment",
+        backendUrl + "api/admin/cancel-appointment",
         { appointmentId },
         { headers: { aToken } }
       );
@@ -99,7 +99,7 @@ const AdminContextProvider = (props) => {
   const completeAppointment = async (appointmentId) => {
   try {
     const { data } = await axios.post(
-      backendUrl + "/api/admin/complete-appointment",
+      backendUrl + "api/admin/complete-appointment",
       { appointmentId },
       { headers: { aToken } }
     );
@@ -117,7 +117,7 @@ const AdminContextProvider = (props) => {
 
   const getDashData = async () => {
     try {
-      const { data } = await axios.get(backendUrl + "/api/admin/dashboard", {
+      const { data } = await axios.get(backendUrl + "api/admin/dashboard", {
         headers: { aToken },
       });
 
