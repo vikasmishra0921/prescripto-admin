@@ -65,13 +65,13 @@ const DoctorAppointment = () => {
             ) : (
               <div className="flex">
                 <img
-                  onClick={() => cancelAppointment()}
+                  onClick={() => cancelAppointment(item._id)}
                   className="w-10 cursor-pointer"
                   src={assets.cancel_icon}
                   alt=""
                 />
                 <img
-                  onClick={() => completeAppointment()}
+                  onClick={() => completeAppointment(item._id)}
                   className="w-10 cursor-pointer"
                   src={assets.tick_icon}
                   alt=""
