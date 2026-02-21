@@ -16,7 +16,7 @@ const Navbar = () => {
 
   const docLogout = () => {
     navigate("/");
-    // dToken && setDToken("");
+    dToken && setDToken("");
     dToken && localStorage.removeItem("dToken");
   };
 
